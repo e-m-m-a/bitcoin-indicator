@@ -37,7 +37,7 @@ class QueryLoopTest(unittest.TestCase):
     def test_valid_request(self):
         """Make sure that the indicator label is presenting the correct message to the user when all is good"""
         indicator = make_indicator(self)
-        curr = cryptocurrency.Bitcoin("eur")
+        curr = cryptocurrency.Bitcoin("usd")
 
         interface.QueryLoop(indicator, curr).start()
 

@@ -51,7 +51,7 @@ class QueryLoop():
             self.indicator.set_label("{} {}".format(result["last"], self.currency.get_ticker()))
             self.last_known = result
         else:
-            self.indicator.set_label("Last Known: {} EUR (Error)".format(self.last_known["last"]))
+            self.indicator.set_label("Last Known: {} USD (Error)".format(self.last_known["last"]))
 
         return True
 
